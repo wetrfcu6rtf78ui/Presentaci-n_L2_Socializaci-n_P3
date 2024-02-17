@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/white.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+	<link rel="stylesheet" href="plugin/chalkboard/style.css">
+
+	<link rel="stylesheet" href="plugin/reveal-pointer/pointer.css" />
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/a865ff16-5c3a-4f72-885a-6d3f53038e41/Leonardo_Kino_XL_Inside_a_crystal_ball_Miniature_landscape_Cry_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.3" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/a865ff16-5c3a-4f72-885a-6d3f53038e41/Leonardo_Kino_XL_Inside_a_crystal_ball_Miniature_landscape_Cry_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+# Socialización
+## Lección 2
+### Angélica Montoya Gallego
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/04605d35-1c30-40db-9b89-6673582364d2/Default_MicroscopioTubo_de_ensayoProbetaMatrazcespet_fondo_neg_2.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 20%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Punto 1
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/04605d35-1c30-40db-9b89-6673582364d2/Default_MicroscopioTubo_de_ensayoProbetaMatrazcespet_fondo_neg_2.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Punto 1
+</div>
+
+<div class="" style="position: absolute; left: 40%; top: 35%; height: 20%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Ingresa al laboratorio [https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_es.htmlLinks to an external site.](https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_es.html) En este podrás aprender como la energía de un sistema se mantiene constante o se conserva cuando este cambia de posición en el espacio en que se mueve  y no existe fuerzas de fricción. También puedes ver de como la fricción entre las superficies afecta el movimiento y la energía mecánica. Las variables que podrás cambiar serian la masa y posición de la patinadora. Para ello vas a ingresar a la pestaña patio del laboratorio, vas a crear un circuito con puntos altos y bajos, vas a escribir en un párrafo donde expliques la transformación de la energía potencial a cinemática y viceversa en algunos puntos del circuito. Adjunta capturas de pantalla del circuito creado.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/dc0f5279-4aa2-4f63-9177-777a8b631f51/Default_skate_fondo_negro_y_colores_neones_Realista_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.3" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/dc0f5279-4aa2-4f63-9177-777a8b631f51/Default_skate_fondo_negro_y_colores_neones_Realista_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Solución
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.3" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/dc0f5279-4aa2-4f63-9177-777a8b631f51/Default_skate_fondo_negro_y_colores_neones_Realista_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 14%; top: 15%; height: 10%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Por favor mirar el siguiente video
+https://www.loom.com/share/b48bbd5703284969b90b06f5f435525a
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 10%; top: 25%; height: 65%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Cuando la patinadora se encuentra en la cima de la montaña, alcanza su punto máximo de altura, lo que se traduce en una gran cantidad de energía potencial almacenada. A medida que comienza su descenso, la masa de la patinadora se vuelve más dinámica, liberando gradualmente esa energía potencial en forma de energía cinética. Este proceso se produce conforme su altura disminuye y su velocidad aumenta. Es en este punto donde la fuerza gravitacional entra en juego, ejerciendo su influencia hacia abajo y acelerando su movimiento mientras se desliza por la pendiente. Sin embargo, cuando la patinadora se enfrenta a la segunda montaña, la situación cambia. Su energía cinética, que había alcanzado su punto máximo en el descenso anterior, comienza a disminuir conforme ella asciende. Esta disminución en la energía cinética se traduce en un aumento de la energía potencial a medida que gana altura nuevamente. En este proceso ascendente, la masa de la patinadora se hace más evidente, su peso se hace sentir con mayor intensidad y la gravedad ejerce una fuerza contraria al ascenso.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.3" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/dc0f5279-4aa2-4f63-9177-777a8b631f51/Default_skate_fondo_negro_y_colores_neones_Realista_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 10%; top: 15%; height: 65%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Debido a que la energía cinética se reduce al subir la segunda montaña, la energía potencial en su punto más alto es menor que en la primera montaña. Entonces, al descender la segunda montaña, que es más baja que la primera, tanto la energía potencial como la cinética disminuyen. Esto significa que, considerando que la tercera montaña es más alta que la segunda, la energía cinética obtenida al descender la segunda montaña no es suficiente para alcanzar la altura máxima de la tercera montaña. Por lo tanto, la patinadora retrocede al descender la tercera montaña para acumular energía potencial antes de descender nuevamente y luego subir la segunda montaña. Este proceso se repite hasta que la energía potencial sea nula y la energía cinética tenga un valor determinado.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/04605d35-1c30-40db-9b89-6673582364d2/Default_MicroscopioTubo_de_ensayoProbetaMatrazcespet_fondo_neg_0.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 20%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Punto 2
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/04605d35-1c30-40db-9b89-6673582364d2/Default_MicroscopioTubo_de_ensayoProbetaMatrazcespet_fondo_neg_0.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Punto 2
+</div>
+
+<div class="" style="position: absolute; left: 40%; top: 35%; height: 20%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+El proyecto Hidroeléctrico Ituango es el proyecto de generación de energía más grande que se está construyendo en Colombia. Generará 2400 MW de energía con ocho unidades de generación (turbinas tipo Francis), explica como es la transformación de la energía mecánica en centrales hidroeléctricas y los impactos ambientales y sociales que genera este tipo de megaproyectos en las comunidades donde se ejecutan, para ello prepara una presentación en prezzi donde expliques, recuerda citar las fuentes de información.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/6b7cb484-ff2e-4ab6-9e24-05a9ebe844c3/Default_Presa_noche_estrellada_color_morado_y_azul_nen_realist_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/6b7cb484-ff2e-4ab6-9e24-05a9ebe844c3/Default_Presa_noche_estrellada_color_morado_y_azul_nen_realist_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Solución
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/6b7cb484-ff2e-4ab6-9e24-05a9ebe844c3/Default_Presa_noche_estrellada_color_morado_y_azul_nen_realist_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 10%; top: 15%; height: 65%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Estimada profesora o estimado profesor,
+Lamentablemente, me encuentro en la situación de no estar familiarizada con el uso de Prezzi y tampoco dispongo del tiempo necesario para aprender a utilizarlo en este momento. Por favor, le ruego considere aceptar esta alternativa. Agradezco su comprensión.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/6b7cb484-ff2e-4ab6-9e24-05a9ebe844c3/Default_Presa_noche_estrellada_color_morado_y_azul_nen_realist_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 10%; top: 15%; height: 65%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Por favor, mira el siguiente video donde podrás ver la presentación con el estilo de Prezzi:
+https://www.loom.com/share/29a5dec51d0946449db2b023f5b21279?sid=a236137f-7a0c-436e-8a97-b86cc5dc2695
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/cd81e261-5271-411f-83ab-bab222647973/Default_Mesa_de_laboratorio_con_diversos_materiales_de_fsica_i_1.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 20%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Punto 3
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/cd81e261-5271-411f-83ab-bab222647973/Default_Mesa_de_laboratorio_con_diversos_materiales_de_fsica_i_1.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Punto 3
+</div>
+
+<div class="" style="position: absolute; left: 40%; top: 45%; height: 20%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+3. Según Adam Boesel, es posible aprovechar la energía física y mecánica de los usuarios durante su rutina de ejercicios en un gimnasio para obtener energía eléctrica que proviene de ellos. Según el principio de conservación de la energía mecánica y el funcionamiento de las maquinas simples, responder las siguientes preguntas:
+    1. Explica cómo se puede dar esto.
+    2. ¿Es posible llevar esto a otros lugares distintos a un gimnasio? Explica cómo sería eso.
+    3. Busca 2 equipos de gimnasio que utilicen las máquinas simples estudiadas en el periodo y realiza una breve explicación de ello ¿crees que es mejor usar estos equipos de gimnasio para hacer rutinas de ejercicios o es mejor sin ellos? Explica tu respuesta. Ingresa a la plataforma Elion 3, foros y busca la discusión P3L2, vas a ingresar lo que desarrollaste en este punto de forma resumida. Comenta sugerencias a una de las entregas de tus compañeros. Envía las respectivas evidencias mediante pantallazos.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Solución
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 8%; top: 40%; height: 10%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+1. Explica cómo se puede dar esto.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 8%; top: 20%; height: 10%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+1. Explica cómo se puede dar esto.
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 15%; top: 30%; height: 50%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+El proceso de transformar la energía física y mecánica de las personas que hacen ejercicio en un gimnasio en energía eléctrica se da gracias al principio de conservación de la energía mecánica y al funcionamiento de las máquinas simples.
+
+Cuando una persona realiza ejercicio en una máquina como una cinta de correr, una bicicleta estática o una elíptica, está generando energía cinética con su movimiento. Esta energía cinética se puede aprovechar mediante un sistema de conexión que enlaza estas máquinas a un generador central. El generador central convierte la energía mecánica producida por el movimiento de las máquinas en energía eléctrica, utilizando el principio de funcionamiento de las máquinas simples.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 8%; top: 40%; height: 10%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+2. ¿Es posible llevar esto a otros lugares distintos a un gimnasio? Explica cómo sería eso.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 8%; top: 15%; height: 10%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+2. ¿Es posible llevar esto a otros lugares distintos a un gimnasio? Explica cómo sería eso.
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 15%; top: 30%; height: 50%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Sí, se puede usar la energía de las personas para hacer electricidad en lugares que no son gimnasios.
+Por ejemplo, en lugares con mucha gente como parques, centros comerciales o estadios, se pueden poner aparatos que recojan la energía de las personas que caminan, corren o se mueven. Estos aparatos pueden estar en el suelo, pasarelas, escaleras o asientos que se mueven. La energía que se produce con el movimiento de la gente se convierte en electricidad que se puede usar.
+
+También se puede hacer esto en lugares urbanos, como pasarelas peatonales, puentes o aceras donde la gente siempre está pasando. Así, cada paso o movimiento de la gente ayuda a hacer electricidad que se puede usar para encender luces, semáforos o cargar aparatos electrónicos.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 8%; top: 40%; height: 10%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+3. Busca 2 equipos de gimnasio que utilicen las máquinas simples estudiadas en el periodo y realiza una breve explicación de ello ¿crees que es mejor usar estos equipos de gimnasio para hacer rutinas de ejercicios o es mejor sin ellos? Explica tu respuesta. Ingresa a la plataforma Elion 3, foros y busca la discusión P3L2, vas a ingresar lo que desarrollaste en este punto de forma resumida. Comenta sugerencias a una de las entregas de tus compañeros. Envía las respectivas evidencias mediante pantallazos.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 15%; top: 25%; height: 40%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+1. **Prensa de piernas**: Este equipo de gimnasio utiliza el principio de la máquina simple llamada "plano inclinado". La prensa de piernas consiste en un asiento inclinado que permite a los usuarios empujar una plataforma con sus piernas contra la resistencia seleccionada. El ángulo del asiento inclinado distribuye la fuerza aplicada por el usuario a través de una distancia mayor, lo que facilita levantar pesos más pesados con menos esfuerzo.
+
+2. **Máquina de polea alta y baja**: Estas máquinas utilizan el principio de la "polea" como máquina simple. En la polea alta, el usuario tira de un cable que pasa por encima de una polea fija para levantar un peso seleccionado. En la polea baja, el usuario tira de un cable que pasa por debajo de una polea fija. Ambas configuraciones permiten realizar una variedad de ejercicios de resistencia que implican tirar o empujar, con la ventaja de cambiar la dirección de la fuerza aplicada para trabajar diferentes grupos musculares.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 15%; top: 25%; height: 40%; width: 70%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Si bien los equipos de gimnasio pueden proporcionar una variedad de opciones de ejercicio y comodidades adicionales, como acceso a entrenadores personales y clases grupales, hacer ejercicio en casa sin equipos especiales puede ser una alternativa más económica y conveniente. Además, con la adecuada planificación y creatividad, es posible lograr resultados efectivos para la salud y el estado físico sin depender de equipos costosos.
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="" style="position: absolute; left: 10%; top: 17%; height: 70%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+<img src="https://i.imgur.com/JQjmEgu.png" alt="" style="object-fit: scale-down">
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/45095a08-2137-44dd-9095-8bda6bc0f00b/Default_Gimnasio_amplio_luminoso_paredes_blancas_suelo_madera_0.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Solución
+</div>
+
+<div class="" style="position: absolute; left: 10%; top: 17%; height: 70%; width: 80%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+<img src="https://i.imgur.com/fIr0d66.png" alt="" style="object-fit: scale-down">
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/ccb1c003-dd3d-49de-8a35-c2dfc4af7b56/Default_Mesa_de_laboratorio_con_diversos_materiales_de_fsica_i_0.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 20%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Punto 4
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="has-dark-background drop" data-auto-animate="true" data-background-color="black" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/ccb1c003-dd3d-49de-8a35-c2dfc4af7b56/Default_Mesa_de_laboratorio_con_diversos_materiales_de_fsica_i_0.jpg" alt="Imagen" style="position: absolute; left: 0%; top: undefined%; height: 100%; width: 30%; display: flex; flex-direction: column; align-items: center; justify-content: center; object-fit: fill">
+
+
+<div class="" style="position: absolute; left: 40%; top: 0%; height: 50%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start" align="top">
+
+## Punto 4
+</div>
+
+<div class="" style="position: absolute; left: 40%; top: 35%; height: 20%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+Que fuerza crees que tenemos que aplicar cono mínimo para elevar una carga de 50 Kg. Y si aplicamos una de 30 N ¿ qué resistencia podemos vencer ?
+1. En una polea fija
+2. En una polea móvil (3 móviles y 1 fija), o también llamado polipasto exponencial
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/83f59683-471f-48b0-9657-10d7f91aa711/Default_fondo_negro_y_colores_neones_Realista_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/83f59683-471f-48b0-9657-10d7f91aa711/Default_fondo_negro_y_colores_neones_Realista_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+## Solución
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/83f59683-471f-48b0-9657-10d7f91aa711/Default_fondo_negro_y_colores_neones_Realista_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 29%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+<img src="https://i.imgur.com/rZcfc73.jpg" alt="" style="object-fit: scale-down">
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-background-opacity="0.5" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/83f59683-471f-48b0-9657-10d7f91aa711/Default_fondo_negro_y_colores_neones_Realista_1.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="" style="position: absolute; left: 29%; top: 0%; height: 100%; width: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center" >
+
+<img src="https://i.imgur.com/UOHSc45.jpg" alt="" style="object-fit: scale-down">
+
+</div>
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" data-auto-animate="true" data-background-image="https://cdn.leonardo.ai/users/d72ea154-1fe2-43d1-a4be-e58387a98a1b/generations/83f59683-471f-48b0-9657-10d7f91aa711/Default_fondo_negro_y_colores_neones_Realista_3.jpg" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 400px; width: 827.9999999999999px; min-height: 400px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<div class="has-dark-background" style="background-color: black; position: absolute; left: 5%; top: 5%; height: 90%; width: 90%; display: flex; flex-direction: column; align-items: center; justify-content: center" align="center">
+
+### Espero Atentamente la nota de esta actividad, si hay algún error en la solución por favor ofrecer una retroalimentación .
+</div>
+</div></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+	<script src="plugin/chalkboard/plugin.js"></script>
+	<script src="plugin/reveal-pointer/pointer.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+	var isLight = isLight(bgColor);
+
+	if(isLight){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+	      RevealPointer,
+		  RevealChalkboard, 
+        ],
+
+
+    	allottedTime: 120 * 1000,
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+		markdown: {
+		  gfm: true,
+		  mangle: true,
+		  pedantic: false,
+		  smartLists: false,
+		  smartypants: false,
+		},
+
+		mermaid: {
+			theme: isLight ? 'default' : 'dark',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+				{ icon: '<i class="fa fa-pen-square"></i>',
+				title: 'Toggle chalkboard (B)',
+				action: 'RevealChalkboard.toggleChalkboard();'
+				},
+				{ icon: '<i class="fa fa-pen"></i>',
+				title: 'Toggle notes canvas (C)',
+				action: 'RevealChalkboard.toggleNotesCanvas();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":"828","height":400,"margin":0,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+
+  <!-- created with Advanced Slides -->
+</html>
